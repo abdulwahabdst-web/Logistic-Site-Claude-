@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Novafreight — Freight Forwarding &amp; Logistics</title>
+  <meta name="description" content="Air and ocean freight, road transport, customs brokerage and warehousing, coordinated by one dedicated logistics team.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__logo">NOVAFREIGHT</div>
+    <ul class="preloader__list preloader__list--a">
+      <li>Vietnam</li><li>United States</li><li>Thailand</li><li>Germany</li><li>United Kingdom</li>
+      <li>Australia</li><li>New Zealand</li><li>Hong Kong</li><li>China</li>
+    </ul>
+    <div class="preloader__map">
+      <img src="images/map/map-dots.png" alt="" width="1214" height="595">
+      <span class="preloader__ping" style="--x:74.5%;--y:42%"></span>
+      <span class="preloader__ping" style="--x:79.8%;--y:46%"></span>
+      <span class="preloader__ping" style="--x:77%;--y:52%"></span>
+      <span class="preloader__ping" style="--x:86%;--y:75%"></span>
+      <span class="preloader__ping" style="--x:94.5%;--y:83%"></span>
+      <span class="preloader__ping" style="--x:49%;--y:26%"></span>
+      <span class="preloader__ping" style="--x:22%;--y:36%"></span>
+    </div>
+    <div class="preloader__count"><span class="preloader__num">0</span><span class="spinner"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <ul class="preloader__list preloader__list--b">
+      <li>Project cargo</li><li>Domestic &amp; linehaul</li><li>Transport</li><li>Air freight</li><li>Ocean freight</li>
+      <li>Customs brokerage</li><li>Warehousing &amp; 3PL</li><li>Project cargo</li><li>Domestic &amp; linehaul</li>
+    </ul>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring">
+      <svg viewBox="0 0 54 54"><circle class="cursor__track" cx="27" cy="27" r="26"/><circle class="cursor__progress" cx="27" cy="27" r="26"/></svg>
+    </div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" data-theme="dark">
+    <div class="topbar">
+      <div class="topbar__news"><span class="topbar__label">News:</span> <span class="topbar__ticker" data-ticker>Novafreight opens a new cross-dock hub in Singapore</span></div>
+      <div class="topbar__links">
+        <a href="#contact" data-hover>Emissions calculator</a><span class="topbar__sep">|</span><a href="#contact" data-hover>Track a shipment</a>
+      </div>
+    </div>
+    <div class="header__row">
+      <a class="logo" href="#top" aria-label="Novafreight home" data-hover>
+        <span class="logo__l">N</span><span class="logo__c"><span>OVA</span></span><span class="logo__l">F</span><span class="logo__c"><span>REIGHT</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" class="nav__link" data-hover><span data-text="About">About</span></a>
+        <a href="#services" class="nav__link" data-hover><span data-text="Services">Services</span></a>
+        <a href="#industries" class="nav__link" data-hover><span data-text="Industries">Industries</span></a>
+        <a href="#insights" class="nav__link" data-hover><span data-text="Insights">Insights</span></a>
+        <a href="#careers" class="nav__link" data-hover><span data-text="Careers">Careers</span></a>
+        <a href="#contact" class="nav__link" data-hover><span data-text="Contact">Contact</span></a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-hover>
+          <span class="menu-btn__dots"><i></i><i></i><i></i><i></i></span><span class="menu-btn__txt">Menu</span>
+        </button>
+        <a href="#contact" class="btn btn--light header__cta" data-hover><span class="btn__txt" data-text="Get a quote">Get a quote</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MENU OVERLAY ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <div class="menu__head">
+        <span class="menu__brand">NF</span>
+        <button class="menu__close" type="button" aria-label="Close menu" data-hover><img src="images/ui/close.svg" alt=""></button>
+      </div>
+      <nav class="menu__nav" aria-label="Menu">
+        <a href="#about" data-hover><small>01</small><span>About</span></a>
+        <a href="#services" data-hover><small>02</small><span>Services</span></a>
+        <a href="#industries" data-hover><small>03</small><span>Industries</span></a>
+        <a href="#insights" data-hover><small>04</small><span>Insights</span></a>
+        <a href="#careers" data-hover><small>05</small><span>Careers</span></a>
+        <a href="#contact" data-hover><small>06</small><span>Contact</span></a>
+      </nav>
+      <div class="menu__foot">
+        <div><p class="label">Email</p><a href="mailto:hello@example.com" data-hover>hello@example.com</a></div>
+        <div><p class="label">Hotline</p><a href="tel:1300000000" data-hover>1300 000 000</a></div>
+        <a href="#contact" class="btn btn--light" data-hover><span class="btn__txt" data-text="Get a quote">Get a quote</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-theme="dark">
+      <div class="hero__pin">
+        <div class="hero__space">
+          <img class="hero__stars" src="images/hero/stars.avif" alt="" decoding="async">
+          <img class="hero__glow" src="images/hero/glow-orange.avif" alt="" decoding="async">
+        </div>
+        <canvas class="globe-canvas" aria-hidden="true"></canvas>
+        <canvas class="globe-arcs" aria-hidden="true"></canvas>
+        <div class="globe-labels" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow"><span class="line"><span>Global logistics</span></span></p>
+          <h1 class="hero__title">
+            <span class="line"><span>Moving</span></span>
+            <span class="line"><span>freight</span></span>
+            <span class="line"><span>forward</span></span>
+          </h1>
+          <p class="hero__text">Air and ocean freight, road transport and customs brokerage, coordinated across Asia-Pacific by one dedicated team.</p>
+          <div class="hero__btns">
+            <a href="#contact" class="btn btn--light" data-hover><span class="btn__txt" data-text="Get a quote">Get a quote</span></a>
+            <a href="#services" class="btn btn--ghost" data-hover><span class="btn__txt" data-text="Our services">Our services</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__atmos" aria-hidden="true">
+        <img class="hero__atmos-d" src="images/hero/atmosphere.webp" alt="">
+        <img class="hero__atmos-m" src="images/hero/atmosphere-mb.webp" alt="">
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro" id="about" data-theme="light">
+      <div class="container intro__grid">
+        <div class="intro__left">
+          <div class="intro__sticky">
+            <div class="intro__thumb">
+              <canvas class="intro__ocean" aria-hidden="true"></canvas>
+              <img class="intro__ship" src="images/ocean/ship.avif" alt="Container ship at sea, seen from above" loading="lazy">
+            </div>
+            <h2 class="h2 intro__title reveal-lines">
+              <span class="line is-muted"><span>We ship cargo.</span></span>
+              <span class="line"><span>We deliver</span></span>
+              <span class="line"><span>certainty.</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="intro__right">
+          <div class="intro__desc reveal-up">
+            <p>Every service sits under one roof and answers to one team, so your supply chain runs the way your business needs it to: on schedule, in full view, and without surprises.</p>
+            <p>No juggling between vendors. No shipments lost between handovers. Just one partner, responsible from the first mile to the last.</p>
+          </div>
+          <a href="#about" class="btn btn--outline intro__btn reveal-up" data-hover><span class="btn__txt" data-text="More about us">More about us</span></a>
+          <div class="intro__stats">
+            <p class="intro__label">Proof, measured in miles</p>
+            <div class="stat">
+              <div class="stat__val"><span data-count="2800" data-format="comma">2,800</span>+</div>
+              <p class="stat__desc">Shipments handled every month</p>
+            </div>
+            <div class="stat">
+              <div class="stat__val"><span data-count="98.6" data-decimals="1">98.6</span>%</div>
+              <p class="stat__desc">On-time delivery rate</p>
+            </div>
+            <div class="stat">
+              <div class="stat__val"><span data-count="10">10</span>+</div>
+              <p class="stat__desc">Years in operation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY (desktop): crane → truck → services → top-down road ============ -->
+    <section class="journey" id="services" data-theme="light" aria-label="Our services">
+      <div class="journey__pin">
+        <div class="stage">
+          <div class="j-bigtext" aria-hidden="true">Our services</div>
+          <div class="j-ground" aria-hidden="true"><i class="j-lanes"></i><i class="j-lanes"></i></div>
+
+          <div class="j-world" aria-hidden="true">
+            <svg class="j-road" xmlns="http://www.w3.org/2000/svg"></svg>
+          </div>
+
+          <img class="j-crate j-crate--blue" src="images/crane/container-blue.avif" alt="" aria-hidden="true">
+          <img class="j-crate j-crate--orange" src="images/crane/container-orange.avif" alt="" aria-hidden="true">
+          <img class="j-stacker" src="images/crane/stacker.webp" alt="" aria-hidden="true">
+          <img class="j-stackerfront" src="images/crane/stacker-front.webp" alt="" aria-hidden="true">
+
+          <div class="j-truck" aria-hidden="true">
+            <div class="truck3d">
+              <div class="truck3d__side">
+                <img class="t-chassis" src="images/truck/chassis.avif" alt="">
+                <img class="t-box" src="images/truck/container-side.avif" alt="">
+                <img class="t-wheel" src="images/truck/wheel-rear.avif" alt="" style="--x:15.62%">
+                <img class="t-wheel" src="images/truck/wheel-rear.avif" alt="" style="--x:23.42%">
+                <img class="t-wheel" src="images/truck/wheel-rear.avif" alt="" style="--x:31.08%">
+                <img class="t-wheel" src="images/truck/wheel-rear.avif" alt="" style="--x:65.05%">
+                <img class="t-wheel t-wheel--front" src="images/truck/wheel-front.avif" alt="" style="--x:88.03%">
+              </div>
+              <div class="truck3d__top">
+                <img src="images/truck/top-container.webp" alt="">
+                <img src="images/truck/top-cab.webp" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="j-box" aria-hidden="true">
+            <div class="j-box__face j-box__front"><img src="images/crane/container-white.avif" alt=""></div>
+            <div class="j-box__face j-box__side"><img src="images/truck/container-side-crop.webp" alt=""></div>
+            <div class="j-box__face j-box__top"></div>
+            <div class="j-box__face j-box__spreader"><img src="images/crane/spreader-side.webp" alt=""></div>
+          </div>
+          <img class="j-spreader" src="images/crane/spreader-side.webp" alt="" aria-hidden="true">
+
+          <div class="j-track">
+            <div class="j-track__intro">
+              <h2 class="h2 j-track__title">
+                <span class="line"><span>Every mode.</span></span>
+                <span class="line"><span>Every market.</span></span>
+                <span class="line is-muted"><span>One partner.</span></span>
+              </h2>
+            </div>
+            <div class="j-track__text">
+              <p>From air and sea to customs and final-mile delivery, our specialists cover every freight discipline end to end.</p>
+              <p>An integrated network means a single contact, a single plan and complete visibility from pickup to proof of delivery.</p>
+            </div>
+            <div class="j-cards">
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-air.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Air<br>freight</h3>
+                <p class="svc__text">Express, consolidated and charter options on major trade lanes, planned around your deadlines and budget.</p>
+              </article>
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-sea.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Ocean<br>freight</h3>
+                <p class="svc__text">Full and part-container loads plus specialist cargo, with carrier selection tuned for cost and reliability.</p>
+              </article>
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-customs.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Customs<br>brokerage</h3>
+                <p class="svc__text">Licensed in-house brokers handle classification, duties, permits and inspections, with nothing outsourced.</p>
+              </article>
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-warehouse.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Warehousing<br>&amp; 3PL</h3>
+                <p class="svc__text">Flexible storage, pick-and-pack and distribution, linked directly to your inbound and outbound freight.</p>
+              </article>
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-project.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Project<br>cargo</h3>
+                <p class="svc__text">Oversized, heavy and out-of-gauge moves engineered end to end, from route surveys to permits.</p>
+              </article>
+              <article class="svc">
+                <img class="svc__icon" src="images/icons/svc-domestic.png" alt="" width="128" height="128">
+                <h3 class="svc__title">Domestic &amp;<br>interstate<br>transport</h3>
+                <p class="svc__text">Metro, regional and interstate road freight with consistent service levels and live delivery updates.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <a href="#services" class="btn btn--ghost j-allbtn" data-hover><span class="btn__txt" data-text="All services">All services</span></a>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY (mobile) ============ -->
+    <section class="mjourney" aria-label="Our services">
+      <div class="mcrane" data-theme="light">
+        <div class="mcrane__pin">
+          <div class="mstage">
+            <div class="m-side">
+              <div class="m-sky"></div>
+              <div class="m-ground"><span class="m-bigtext">Our services</span></div>
+              <img class="m-crate m-crate--orange" src="images/crane/mb/container-orange.avif" alt="" aria-hidden="true">
+              <img class="m-crate m-crate--blue" src="images/crane/mb/container-blue.avif" alt="" aria-hidden="true">
+              <img class="m-crate m-crate--white" src="images/crane/mb/container-white.avif" alt="" aria-hidden="true">
+              <img class="m-stacker" src="images/crane/mb/stacker.webp" alt="" aria-hidden="true">
+              <img class="m-stacker m-stacker--loaded" src="images/crane/mb/stacker-loaded.webp" alt="" aria-hidden="true">
+            </div>
+            <div class="m-top" aria-hidden="true">
+              <div class="m-toptruck">
+                <img src="images/truck/mb-cab.avif" alt="">
+                <img class="m-toptruck__box" src="images/truck/mb-container.avif" alt="">
+              </div>
+              <div class="m-topcrane">
+                <img class="m-topcrane__box" src="images/crane/top/container.webp" alt="">
+                <img src="images/crane/top/spreader.webp" alt="">
+                <img src="images/crane/top/stacker.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mservices" data-theme="dark">
+        <div class="mservices__col">
+          <h2 class="h2 reveal-lines">
+            <span class="line"><span>Every mode.</span></span>
+            <span class="line"><span>Every market.</span></span>
+            <span class="line is-muted"><span>One partner.</span></span>
+          </h2>
+          <div class="mservices__text reveal-up">
+            <p>From air and sea to customs and final-mile delivery, our specialists cover every freight discipline end to end.</p>
+            <p>An integrated network means a single contact, a single plan and complete visibility from pickup to proof of delivery.</p>
+          </div>
+          <div class="mservices__list">
+            <article class="msvc reveal-up"><img src="images/icons/svc-air.png" alt="" width="128" height="128"><h3>Air freight</h3><p>Express, consolidated and charter options on major trade lanes, planned around your deadlines and budget.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/svc-sea.png" alt="" width="128" height="128"><h3>Ocean freight</h3><p>Full and part-container loads plus specialist cargo, with carrier selection tuned for cost and reliability.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/svc-customs.png" alt="" width="128" height="128"><h3>Customs brokerage</h3><p>Licensed in-house brokers handle classification, duties, permits and inspections, with nothing outsourced.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/svc-warehouse.png" alt="" width="128" height="128"><h3>Warehousing &amp; 3PL</h3><p>Flexible storage, pick-and-pack and distribution, linked directly to your inbound and outbound freight.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/svc-project.png" alt="" width="128" height="128"><h3>Project cargo</h3><p>Oversized, heavy and out-of-gauge moves engineered end to end, from route surveys to permits.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/svc-domestic.png" alt="" width="128" height="128"><h3>Domestic &amp; interstate transport</h3><p>Metro, regional and interstate road freight with consistent service levels and live delivery updates.</p></article>
+          </div>
+          <h2 class="h2 mservices__why reveal-lines">
+            <span class="line is-muted"><span>Dependable</span></span>
+            <span class="line"><span>at every</span></span>
+            <span class="line"><span>checkpoint</span></span>
+          </h2>
+          <div class="mservices__list">
+            <article class="msvc reveal-up"><img src="images/icons/feat-tracking-light.png" alt="" width="80" height="80"><h3>Real-time shipment tracking</h3><p>See where your cargo is at every stage. Live status means quicker decisions and no guesswork.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/feat-globe-light.png" alt="" width="80" height="80"><h3>Global network coverage</h3><p>Partners and agents across Asia-Pacific and beyond cover the trade lanes your business depends on.</p></article>
+            <article class="msvc reveal-up"><img src="images/icons/feat-support-light.png" alt="" width="80" height="80"><h3>24/7 customer support</h3><p>Real people, any hour. Routine update or urgent problem, you always reach someone who can act.</p></article>
+          </div>
+        </div>
+        <div class="mservices__tail" aria-hidden="true"></div>
+      </div>
+      <div class="m-roadtruck" aria-hidden="true">
+        <img src="images/truck/mb-cab.avif" alt="">
+        <img class="m-roadtruck__box" src="images/truck/mb-container.avif" alt="">
+      </div>
+    </section>
+
+    <!-- ============ WHY (desktop road section) ============ -->
+    <section class="why" data-theme="light" aria-label="Why choose us">
+      <div class="why__road" aria-hidden="true"></div>
+      <div class="why__truck" aria-hidden="true">
+        <div class="why__truck-inner">
+          <img src="images/truck/top-container.webp" alt="">
+          <img src="images/truck/top-cab.webp" alt="">
+        </div>
+      </div>
+      <div class="container why__grid">
+        <div class="why__left">
+          <div class="why__sticky">
+            <h2 class="h2 reveal-lines">
+              <span class="line is-muted"><span>Dependable</span></span>
+              <span class="line"><span>at every</span></span>
+              <span class="line"><span>checkpoint</span></span>
+            </h2>
+            <p class="why__text reveal-up">Clear communication, proactive planning and accountable people keep your cargo moving, whatever the route throws at it.</p>
+          </div>
+        </div>
+        <div class="why__right">
+          <article class="feat">
+            <img class="feat__icon" src="images/icons/feat-tracking-dark.png" alt="" width="128" height="128">
+            <h3 class="feat__title">Real-time<br>shipment<br>tracking</h3>
+            <p class="feat__text">See where your cargo is at every stage. Live status means quicker decisions and no guesswork.</p>
+          </article>
+          <article class="feat">
+            <img class="feat__icon" src="images/icons/feat-globe-dark.png" alt="" width="128" height="128">
+            <h3 class="feat__title">Global<br>network<br>coverage</h3>
+            <p class="feat__text">Partners and agents across Asia-Pacific and beyond cover the trade lanes your business depends on.</p>
+          </article>
+          <article class="feat">
+            <img class="feat__icon" src="images/icons/feat-support-dark.png" alt="" width="128" height="128">
+            <h3 class="feat__title">24/7<br>customer<br>support</h3>
+            <p class="feat__text">Real people, any hour. Routine update or urgent problem, you always reach someone who can act.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OCEAN ============ -->
+    <section class="ocean" data-theme="dark" aria-label="Why us">
+      <div class="ocean__pin">
+        <canvas class="ocean__canvas" aria-hidden="true"></canvas>
+        <div class="ocean__shipwrap" aria-hidden="true">
+          <img class="ocean__ship ocean__ship--d" src="images/ocean/ship.avif" alt="">
+          <img class="ocean__ship ocean__ship--m" src="images/ocean/ship-mb.avif" alt="">
+        </div>
+        <div class="ocean__haze" aria-hidden="true"></div>
+        <div class="ocean__clouds" aria-hidden="true">
+          <img class="cloud cloud--l" src="images/sky/cloud-left.avif" alt="">
+          <img class="cloud cloud--r" src="images/sky/cloud-right.avif" alt="">
+          <img class="cloud cloud--b" src="images/sky/cloud-bottom.avif" alt="">
+          <img class="cloud cloud--p" src="images/sky/cloud-puff.avif" alt="">
+          <img class="cloud cloud--p2" src="images/sky/cloud-left.avif" alt="">
+        </div>
+        <div class="ocean__wipe" aria-hidden="true"></div>
+      </div>
+      <div class="ocean__feats">
+        <div class="ocean__title">
+          <p class="ocean__eyebrow">Why us</p>
+          <h2 class="ocean__h">Logistics that<br>keeps your<br>promises.</h2>
+        </div>
+        <article class="ofeat ofeat--l"><img src="images/icons/why-1.png" alt="" width="128" height="128"><h3>A single point<br>of contact</h3><p>One team manages your shipment from origin to destination, so you never chase multiple vendors.</p></article>
+        <article class="ofeat ofeat--r"><img src="images/icons/why-2.png" alt="" width="128" height="128"><h3>End-to-end<br>visibility</h3><p>Track freight in real time and get alerts before small issues turn into delays.</p></article>
+        <article class="ofeat ofeat--l"><img src="images/icons/why-3.png" alt="" width="128" height="128"><h3>Compliance,<br>handled</h3><p>Licensed brokers keep every shipment aligned with the regulations of each market we serve.</p></article>
+        <article class="ofeat ofeat--r"><img src="images/icons/why-4.png" alt="" width="128" height="128"><h3>Clear, competitive<br>pricing</h3><p>No hidden surcharges. Straightforward quotes backed by responsive, knowledgeable support.</p></article>
+        <article class="ofeat ofeat--c"><img src="images/icons/why-5.png" alt="" width="128" height="128"><h3>Rapid problem<br>solving</h3><p>When the unexpected happens we act immediately to protect your timeline. No blame games.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testi" id="industries" data-theme="light">
+      <div class="container">
+        <div class="testi__head">
+          <h2 class="h2 reveal-lines">
+            <span class="line"><span>Trusted by</span></span>
+            <span class="line"><span>shippers</span></span>
+            <span class="line is-muted"><span>across the region</span></span>
+          </h2>
+          <p class="testi__intro reveal-up">From first shipments to high-volume programs, our clients stay because we handle their freight as if it were our own.</p>
+        </div>
+        <div class="testi__list">
+          <article class="quote">
+            <div class="quote__who">
+              <img class="quote__img" src="images/people/person-1.webp" alt="" width="384" height="384" loading="lazy">
+              <div><h3 class="quote__name">Daniel Reeves</h3><p class="quote__role">Managing Director<br>at Harbourline Group</p></div>
+              <span class="quote__num">01</span>
+            </div>
+            <blockquote class="quote__text reveal-up">Our operation runs on this team. They understand our business, treat every consignment on its own merits and give us a level of attention we never got from the big forwarders. Highly recommended.</blockquote>
+          </article>
+          <article class="quote">
+            <div class="quote__who">
+              <img class="quote__img" src="images/people/person-2.webp" alt="" width="384" height="384" loading="lazy">
+              <div><h3 class="quote__name">Michael Tan</h3><p class="quote__role">Regional Supply Chain Lead,<br>Global Telecom Supplier</p></div>
+              <span class="quote__num">02</span>
+            </div>
+            <blockquote class="quote__text reveal-up">We were shipping equipment for a major infrastructure project for the first time and the requirements were completely new to us. Over three months of planning they walked us through every permit, every document and every milestone. The first consignment landed on schedule and went straight to site without a single hold. That result came from relentless attention to detail and proactive monitoring at every step.</blockquote>
+          </article>
+          <article class="quote">
+            <div class="quote__who">
+              <img class="quote__img" src="images/people/person-3.webp" alt="" width="384" height="384" loading="lazy">
+              <div><h3 class="quote__name">Liam Carter</h3><p class="quote__role">Head of Operations<br>at Factory Seven</p></div>
+              <span class="quote__num">03</span>
+            </div>
+            <blockquote class="quote__text reveal-up">We worked together for several years building a lean, cost-effective supply chain for a large retail brand. Their knowledge of the region showed from day one. A freight partner should be part of your business, not just a vendor, and that is exactly what we got: faster time to market, tighter operations and real savings negotiated on our behalf. I recommend them without hesitation.</blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="partners" data-theme="light" aria-label="Our partners">
+      <div class="container">
+        <div class="pgrid" data-partners="airlines">
+          <div class="pgrid__head"><span>Our partners</span><strong>Airlines</strong></div>
+        </div>
+        <div class="pgrid" data-partners="shipping">
+          <div class="pgrid__head"><span>Our partners</span><strong>Shipping lines</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHTS ============ -->
+    <section class="insights" id="insights" data-theme="dark">
+      <div class="insights__horizon" aria-hidden="true"><img src="images/insights/horizon.avif" alt=""></div>
+      <div class="container insights__inner">
+        <div class="insights__head">
+          <h2 class="h2 reveal-lines">
+            <span class="line is-muted"><span>Insights from</span></span>
+            <span class="line"><span>the supply chain</span></span>
+          </h2>
+          <div class="insights__side reveal-up">
+            <p>Stay ahead of the changes shaping regional trade, from new regulations to shifting routes and capacity.</p>
+            <a href="#insights" class="btn btn--ghost" data-hover><span class="btn__txt" data-text="View all">View all</span></a>
+          </div>
+        </div>
+        <div class="insights__body">
+          <ul class="posts">
+            <li class="post is-active" data-art="ship">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--ship"></span>
+                <span class="post__meta"><time>September 24, 2026</time><span class="post__cat">Asia Pacific</span></span>
+                <span class="post__title">Q4 ocean rates: what importers should plan for now</span>
+              </a>
+            </li>
+            <li class="post" data-art="award">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--award"></span>
+                <span class="post__meta"><time>September 15, 2026</time><span class="post__cat">Featured</span></span>
+                <span class="post__title">Novafreight named finalist in the regional logistics awards</span>
+              </a>
+            </li>
+            <li class="post" data-art="route">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--route"></span>
+                <span class="post__meta"><time>September 8, 2026</time><span class="post__cat">Asia Pacific</span></span>
+                <span class="post__title">New canal route set to shorten transit to South-East Asia</span>
+              </a>
+            </li>
+            <li class="post" data-art="portal">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--portal"></span>
+                <span class="post__meta"><time>September 6, 2026</time><span class="post__cat">Featured</span></span>
+                <span class="post__title">Introducing our new customer portal</span>
+              </a>
+            </li>
+            <li class="post" data-art="trader">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--trader"></span>
+                <span class="post__meta"><time>September 3, 2026</time><span class="post__cat">Featured</span></span>
+                <span class="post__title">Trusted trader accreditation: what it means for you</span>
+              </a>
+            </li>
+            <li class="post" data-art="globe">
+              <a href="#insights" data-hover>
+                <span class="post__thumb art art--globe"></span>
+                <span class="post__meta"><time>September 1, 2026</time><span class="post__cat">Market updates</span></span>
+                <span class="post__title">Monthly market update: China — September</span>
+              </a>
+            </li>
+          </ul>
+          <div class="insights__preview" aria-hidden="true">
+            <div class="art art--ship is-on"></div>
+            <div class="art art--award"></div>
+            <div class="art art--route"></div>
+            <div class="art art--portal"></div>
+            <div class="art art--trader"></div>
+            <div class="art art--globe"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="careers" data-theme="light">
+      <div class="container faq__grid">
+        <div class="faq__left">
+          <h2 class="faq__title">F.A.Q</h2>
+          <p>Straight answers, so you can move ahead with confidence.</p>
+        </div>
+        <div class="faq__list">
+          <details class="qa" open>
+            <summary data-hover><span class="qa__n">01</span><span class="qa__q">What does Novafreight do?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>We are a freight forwarder and logistics provider. We plan and manage air freight, ocean freight, road transport, customs brokerage and warehousing as one connected service, with a single team accountable for every step.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">02</span><span class="qa__q">Which industries do you work with?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Retail and e-commerce, automotive and industrial equipment, mining and resources, building and construction, food and beverage, healthcare and consumer electronics, plus project and heavy-lift cargo.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">03</span><span class="qa__q">Which shipping modes do you offer?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Air (express, consolidated and charter), ocean (FCL, LCL and breakbulk) and road (metro, regional and interstate). We combine modes when that gives you a better balance of cost and speed.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">04</span><span class="qa__q">Can you handle customs clearance?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Yes. Our licensed in-house brokers manage tariff classification, duties and taxes, permits, quarantine and inspections, so your goods clear without surprises.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">05</span><span class="qa__q">How is freight pricing worked out?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Pricing depends on mode, route, volume or weight, cargo type and timing. Every quote is itemised and all-in, so you know exactly what you are paying for before you book.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">06</span><span class="qa__q">Do you provide warehousing and 3PL?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>We offer short and long-term storage, pick and pack, kitting, cross-docking and distribution, connected directly to your inbound and outbound freight.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">07</span><span class="qa__q">Can you move oversized or heavy cargo?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Yes. Our project cargo team engineers out-of-gauge and heavy-lift moves end to end, including route surveys, permits, escorts and specialised equipment.</p></div>
+          </details>
+          <details class="qa">
+            <summary data-hover><span class="qa__n">08</span><span class="qa__q">How do I get a quote?</span><i class="qa__dot"></i></summary>
+            <div class="qa__a"><p>Send us your origin, destination, cargo details and timing through the contact form or by email. A specialist will come back to you within one business day.</p></div>
+          </details>
+        </div>
+        <div class="faq__side">
+          <p>Still have questions? Our team is happy to help.</p>
+          <a href="mailto:hello@example.com" class="link-u" data-hover>Email us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="contact" data-theme="dark">
+      <div class="cta__rings" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="cta__inner">
+        <h2 class="cta__title reveal-lines">
+          <span class="line"><span>Ready to</span></span>
+          <span class="line"><span>ship</span></span>
+          <span class="line"><span>smarter?</span></span>
+        </h2>
+        <p class="cta__text reveal-up">Talk to people who know freight. No call centres, no runaround, just experienced help when you need it.</p>
+        <a href="mailto:hello@example.com" class="btn btn--ghost cta__btn reveal-up" data-hover><span class="btn__txt" data-text="Get a quote">Get a quote</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-theme="light">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p>One partner.<br>Every mile covered.</p>
+      </div>
+      <div class="footer__rule"></div>
+
+      <div class="footer__socials">
+        <p class="label">Socials</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn" data-hover><img src="images/ui/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Instagram" data-hover><img src="images/ui/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Facebook" data-hover><img src="images/ui/facebook.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer__company">
+        <p class="label">Company</p>
+        <ul class="footer__links">
+          <li><a href="#top" class="is-current" data-hover>Home</a></li>
+          <li><a href="#about" data-hover>About us</a></li>
+          <li><a href="#careers" data-hover>Careers</a></li>
+          <li><a href="#insights" data-hover>Insights</a></li>
+          <li><a href="#industries" data-hover>Industries</a></li>
+          <li><a href="#services" data-hover>Services</a></li>
+          <li><a href="#contact" data-hover>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer__pay">
+        <p class="label">Secure payments</p>
+        <p>Payments are processed through a PCI-DSS compliant gateway. Card details are never stored.</p>
+        <div class="paycards">
+          <img src="images/ui/pay-visa.svg" alt="Visa"><img src="images/ui/pay-mastercard.svg" alt="Mastercard"><img src="images/ui/pay-discover.svg" alt="Discover"><img src="images/ui/pay-amex.svg" alt="American Express"><img src="images/ui/pay-diners.svg" alt="Diners Club"><img src="images/ui/pay-jcb.svg" alt="JCB"><img src="images/ui/pay-unionpay.svg" alt="UnionPay"><img src="images/ui/pay-applepay.svg" alt="Apple Pay"><img src="images/ui/pay-other.svg" alt="Other">
+        </div>
+      </div>
+
+      <div class="footer__tabs">
+        <div class="tabs" role="tablist">
+          <button class="tabs__btn is-active" type="button" role="tab" data-tab="industries" data-hover>Industries</button>
+          <button class="tabs__btn" type="button" role="tab" data-tab="services" data-hover>Services</button>
+        </div>
+        <div class="marquee" data-marquee="industries">
+          <div class="marquee__track">
+            <span>Retail &amp; E-commerce</span><span>Automotive &amp; Industrial Equipment</span><span>Mining &amp; Resources</span><span>Building &amp; Construction</span><span>Project &amp; Heavy Lift</span><span>Food &amp; Beverage</span><span>Healthcare &amp; Pharma</span><span>Consumer Electronics</span>
+          </div>
+        </div>
+        <div class="marquee" data-marquee="services" hidden>
+          <div class="marquee__track">
+            <span>Air Freight</span><span>Ocean Freight</span><span>Customs Brokerage</span><span>Warehousing &amp; 3PL</span><span>Project Cargo</span><span>Domestic &amp; Interstate Transport</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__photo" aria-hidden="true">
+        <div class="footer__road"><img src="images/truck/top-container.webp" alt=""><img src="images/truck/top-cab.webp" alt=""></div>
+      </div>
+      <div class="footer__contact">
+        <div><p class="label">Head office</p><p class="footer__big">Level 4, 88 Dockside Avenue,<br>Port Melbourne VIC 3207, Australia.</p><a class="footer__dir" href="#" data-hover><img src="images/ui/arrow-return.svg" alt=""> Get directions</a></div>
+        <div><p class="label">Email</p><a class="footer__big" href="mailto:hello@example.com" data-hover>hello@example.com</a></div>
+        <div><p class="label">Operating across</p><p class="footer__big">Australia &nbsp;/&nbsp; New Zealand &nbsp;/&nbsp; Singapore &nbsp;/&nbsp; Hong Kong &nbsp;/&nbsp; China</p></div>
+        <div><p class="label">Hotline</p><a class="footer__big" href="tel:1300000000" data-hover>1300 000 000</a></div>
+        <div><p class="label">Office hours</p><p class="footer__big">Monday – Friday / 8:30AM – 5:30PM</p></div>
+      </div>
+      <div class="footer__map" aria-hidden="true">
+        <img src="images/map/map-footer.png" alt="" width="624" height="306">
+        <i style="--x:83%;--y:56%"></i><i style="--x:83%;--y:60%"></i><i style="--x:88.5%;--y:84%"></i><i style="--x:97%;--y:85%"></i><i style="--x:77%;--y:52%"></i>
+      </div>
+      <div class="footer__wordmark" aria-hidden="true">NOVA<br>FREIGHT</div>
+      <div class="footer__bottom">
+        <p>© 2026 Novafreight Pty Ltd. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="#" data-hover>QHSE</a><a href="#" data-hover>Privacy policy</a><a href="#" data-hover>Terms &amp; conditions</a><a href="#" data-hover>Delivery policy</a><a href="#" data-hover>Cookie settings</a>
+        </nav>
+        <p>ABN 00 000 000 000</p>
+      </div>
+    </div>
+    <canvas class="footer__dust" aria-hidden="true"></canvas>
+  </footer>
+
+  <!-- fixed plane (ocean → testimonials transition) -->
+  <div class="plane" aria-hidden="true">
+    <img class="plane__shadow" src="images/sky/plane-shadow.avif" alt="">
+    <img class="plane__img" src="images/sky/plane.avif" alt="">
+  </div>
+
+  <div class="j-speed" aria-hidden="true"><span>00</span> KM/H</div>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/land-data.js"></script>
+  <script src="js/globe.js"></script>
+  <script src="js/ocean.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
